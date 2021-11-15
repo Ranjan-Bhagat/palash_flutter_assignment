@@ -1,6 +1,6 @@
 # palash_flutter_assignment
 
-A new Flutter project.
+This is a flutter assignment by Palash
 
 ## Getting Started
 
