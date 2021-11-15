@@ -1,6 +1,6 @@
 # palash_flutter_assignment
 
-This is a flutter assignment by Palash
+This is a flutter assignment by Palash. Please add you own api key in services/api_service.dart beafore running this project.
 
 ## Getting Started
 
