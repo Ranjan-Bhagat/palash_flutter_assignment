@@ -6,7 +6,7 @@ class ApiService {
   static const String _baseURL = "https://api.pexels.com/v1";
 
   static const String _apiKey =
-      '563492ad6f9170000100000105e6c9d2fac54610b916f96b178a5f35';
+      'YOUR API KEY';
 
   static const Map<String, String> _authHeader = {'Authorization': _apiKey};
 
