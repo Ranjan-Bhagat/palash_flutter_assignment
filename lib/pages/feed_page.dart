@@ -33,7 +33,7 @@ class _FeedPageState extends State<FeedPage> {
       setState(() {
         data = _data;
         if (data is SearchPhotoModel) {
-          photos = (data as SearchPhotoModel).photos;
+          photos = data.photos;
         }
       });
 
@@ -43,7 +43,7 @@ class _FeedPageState extends State<FeedPage> {
         if (scrollController.offset >=
                 scrollController.position.maxScrollExtent &&
             !scrollController.position.outOfRange &&
-            (data as SearchPhotoModel).nextPage != null) {
+            data.nextPage != null) {
           setState(() {
             loadingNewPage = true;
           });
@@ -78,7 +78,7 @@ class _FeedPageState extends State<FeedPage> {
     return Scaffold(body: Builder(builder: (context) {
       if (data != null) {
         if (data is SearchPhotoModel) {
-          if ((data as SearchPhotoModel).totalResults == 0) {
+          if (data.totalResults == 0) {
             //When no data is avaliable
             return const Center(child: Text("No data found."));
           } else {
