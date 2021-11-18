@@ -29,7 +29,7 @@ class ApiService {
     if (data is http.Response) {
       return SearchPhotoModel.fromJson(data.body);
     } else {
-      return data as String;
+      return data;
     }
   }
 
@@ -38,7 +38,7 @@ class ApiService {
     if (data is http.Response) {
       return SearchPhotoModel.fromJson(data.body);
     } else {
-      return data as String;
+      return data;
     }
   }
 }
